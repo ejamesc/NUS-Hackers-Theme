@@ -451,26 +451,10 @@ textarea {
 
 /* =Comments
 -------------------------------------------------------------- */
+.dsq-comment-message {
+	font-size: 14px;
+}
 
-article.comment {
-	display: block;
-}
-#respond input[type=text] {
-	display: block;
-	width: 100%;
-}
-#respond textarea {
-	display: block;
-	margin: 0 0 1em;
-	width: 100%;
-}
-#respond .form-allowed-tags {
-	clear: both;
-	width: 100%;
-}
-#respond .form-allowed-tags code {
-	display: block;
-}
 
 
 /* =Widgets
