@@ -161,10 +161,8 @@ a:hover { text-decoration: none;}
 #access {
     position: relative;
     font-size: 14px;
-    left: 75px;
     top: -65px;
 	float: right;
-	width: 500px;
 }
 #access ul {
 	list-style: none;
