@@ -15,13 +15,5 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<?php if(is_home() ):?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="<?php bloginfo( 'template_url' ); ?>/autocolumn.min.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">$(function(){
-	$('#columnize').columnize({ width: 376 });
-	});</script>
-
-<?php endif; ?>
 </body>
 </html>

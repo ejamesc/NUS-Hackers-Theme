@@ -79,6 +79,7 @@ a:hover { text-decoration: none;}
     padding-bottom: 20px;
     width: 942px;
 }
+
 #belowcontainer /*container below the featured post*/{
     width: 942px;
 }
@@ -97,7 +98,12 @@ a:hover { text-decoration: none;}
 
 /* Column styles */
 #columnize {
-    width: 100%;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-count: 3;
+    -moz-column-gap: 2em;
+    column-count: 3;
+    column-gap: 2em;
 }
 .first.column {
     margin-right: 1.6em;
@@ -299,7 +305,7 @@ article {
 
 /* Headings */
 h1, h2, h3, h4, h5 { 
-    font-family: Merriweather, Times, serif;
+    font-family: Quattrocento, Times, serif;
     margin: 10px 0;
     }
 #feature .entry-title a {
