@@ -9,7 +9,7 @@
 
 	<footer id="colophon" role="contentinfo">
 			<div id="site-generator">
-				NUS Hackers | <a href="http://wordpress.org/" rel="generator">WordPress</a><span class="sep"> | </span><?php printf( __( 'Theme: %1$s by %2$s.', 'toolbox' ), 'Toolbox', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+				&copy;NUSHackers | <a href="http://wordpress.org/" rel="generator">WordPress</a><span class="sep"> | </span> Theme: <a href="https://github.com/nushackers/NUS-Hackers-Theme">NUS Hackers</a>, available on Github. | <a href="<?php echo wp_login_url(); ?>">Admin</a>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
