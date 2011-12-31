@@ -80,12 +80,12 @@ a:hover { text-decoration: underline;}
 
 #posts article {
 	border-bottom: 1px dashed #ccc;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	font-size: 15px;
 }
 
 #right {
-	width: 460px;
+	width: 450px;
 	padding-bottom: 40px;
 	margin-top: 20px;
 	float: right;
