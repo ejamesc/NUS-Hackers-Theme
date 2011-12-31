@@ -110,6 +110,14 @@ a:hover { text-decoration: underline;}
 	color: #888;
 }
 
+#leftbar {
+	float: left;
+	width: 430px;
+	border: 3px solid #eee;
+	padding: 10px;
+	margin-top: 30px;
+}
+
 /* Column styles */
 #columnize {
     -webkit-column-count: 3;

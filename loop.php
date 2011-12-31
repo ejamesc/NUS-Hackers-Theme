@@ -84,13 +84,15 @@
 </div><!--posts-->
 
 <div id="right">
-<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo get_bloginfo( 'url' ); ?>/sponsor">Sponsored</a> by X. <strong><em><a class="subtle" href="<?php echo get_bloginfo( 'url' ); ?>/fridayhacks">Every Friday @ 6pm UTown ERC SR 2</a></em></strong></span></h1>
-	<?php $page_id = 1894; //ejames's local: 208
+<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>/sponsor">Sponsored</a> by __________. <strong><em><a class="subtle" href="<?php echo home_url( '/' ); ?>/fridayhacks">Every Friday @ 6pm UTown ERC SR 2</a></em></strong></span></h1>
+	<?php $page_id = 1894; //ejames's local: 208 production: 1894
 	$page = get_page($page_id);
 	$content = $page->post_content;
 	echo $content;
 	?>
 </div>
+
+<div id="leftbar"><strong>We're building a community of passionate hackers in NUS.</strong> <a href="<?php echo home_url( '/' ); ?>about">Read more about us</a>, attend or speak at <a href="<?php echo home_url( '/' ); ?>fridayhacks">one of our meetings</a>, or <a href="<?php echo home_url( '/' ); ?>code">use our code</a>.</div>
 
 <?php elseif ( is_page_template('articles.php') ) : //If this calls for an articles listing ?>
 	<?php
