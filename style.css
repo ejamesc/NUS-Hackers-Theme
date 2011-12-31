@@ -80,7 +80,7 @@ a:hover { text-decoration: underline;}
 
 #posts article {
 	border-bottom: 1px dashed #ccc;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	font-size: 15px;
 }
 
@@ -353,6 +353,8 @@ a.subtle:hover {color: #f8941d;}
   font-weight: normal;
   margin: 7px 0 0 0;
 }
+
+.front-h1 .artheader {margin-bottom: 25empx;}
 
 .front-h1 span a { color: #666; text-decoration:underline;}
 .front-h1 span a:hover {text-decoration:none;}
