@@ -80,6 +80,7 @@ a:hover { text-decoration: underline;}
 
 #posts article {
 	border-bottom: 1px dashed #ccc;
+	padding-bottom: 10px;
 	font-size: 15px;
 }
 
