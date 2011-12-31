@@ -84,7 +84,7 @@
 </div><!--posts-->
 
 <div id="right">
-<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>/sponsor">Sponsored</a> by __________. <strong><em><a class="subtle" href="<?php echo home_url( '/' ); ?>/fridayhacks">Every Friday @ 6pm UTown ERC SR 2</a></em></strong></span></h1>
+<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Sponsored</a> by __________. <strong><em><a class="subtle" href="<?php echo home_url( '/' ); ?>fridayhacks">Every Friday @ 6pm UTown ERC SR 2</a></em></strong></span></h1>
 	<?php $page_id = 1894; //ejames's local: 208 production: 1894
 	$page = get_page($page_id);
 	$content = $page->post_content;
