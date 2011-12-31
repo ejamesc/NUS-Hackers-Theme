@@ -30,10 +30,10 @@ blockquote:before, blockquote:after, q:before, q:after {
 a {
     background: none repeat scroll 0 0 transparent;
     color: #CC4100;
-    text-decoration: underline;
+    text-decoration:none;
 }
 
-a:hover { text-decoration: none;}
+a:hover { text-decoration: underline;}
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -44,12 +44,10 @@ a:hover { text-decoration: none;}
 }
 #primary {
 	float: left;
-	margin: 0 -240px 0 0;
 	width: 100%;
 	border-bottom: 2px dotted #ccc;
 }
 #content {
-	margin: 0 280px 0 0;
 	line-height: 23px;
 }
 #main .widget-area {
@@ -68,32 +66,48 @@ a:hover { text-decoration: none;}
 }
 #branding {
     width: 942px;
-    border-bottom: 2px dotted #ccc;
+    border-bottom: 1px dotted #333;
     margin-bottom: 20px;
     font-family: Helvetica, Arial, sans-serif;
     margin-left: 10px;
 }
-#feature {
-    margin-left: 10px;
-    border-bottom: 2px dotted #ccc;
-    padding-bottom: 20px;
-    width: 942px;
+
+#posts {
+    float: left;
+    margin-top: 20px;
+    width: 450px;
 }
 
-#belowcontainer /*container below the featured post*/{
-    width: 942px;
+#posts article {
+	border-bottom: 1px dashed #ccc;
+	font-size: 15px;
 }
-#leftbar{
-    float: left;
-    width: 300px;
-    padding: 20px 20px 20px 0;
-    margin-left: 10px;
-    min-height: 350px;
+
+#right {
+	width: 460px;
+	padding-bottom: 40px;
+	margin-top: 20px;
+	float: right;
+	font-size: 17px;
+	font-family: museo-sans, Georgia, Times;
 }
-#posts {
-    float: right;
-    width: 610px;
-    padding: 20px 0px;
+
+#right div strong {color: #444;}
+
+#right time {
+	color: #999;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#right div {
+	margin-bottom: 10px;
+	line-height: 140%;
+}
+
+#right div span {
+	color: #888;
 }
 
 /* Column styles */
@@ -185,6 +199,7 @@ a:hover { text-decoration: none;}
 	display: block;
 	line-height: 2em;
 	padding: 0.2em 1em;
+	color: #000;
 	text-decoration: none;
 }
 #access ul ul {
@@ -211,7 +226,7 @@ a:hover { text-decoration: none;}
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #F8941D;
+	background: #f8941d;
 	color: #fff;
 }
 #access ul ul a:hover {
@@ -221,14 +236,14 @@ a:hover { text-decoration: none;}
 	display: block;
 }
 .current_page_item a {
-    color: #fff;
+    color: #fff !important;
     background: #F8941D;
 }
 
 /* =Content
 -------------------------------------------------------------- */
 article {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 #content nav {
 	display: block;
@@ -304,25 +319,51 @@ article {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5 { 
+h1, h2, h3, h4, h5 {
     font-family: Quattrocento, Times, serif;
     margin: 10px 0;
     }
+h1 { margin: 3px 0px -5px; font-size: 23px;}
+
+a.subtle {text-decoration: none !important;}
+a.subtle:hover {color: #f8941d;}
+
+.front-h1 {
+	font-size: 30px;
+	border-bottom: 3px solid #000;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.front-h1 span {
+  color: #777;
+  display: block;
+  font-family: Helvetica, Arial sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 7px 0 0 0;
+}
+
+.front-h1 span a { color: #666; text-decoration:underline;}
+.front-h1 span a:hover {text-decoration:none;}
 #feature .entry-title a {
     font-size: 140%;
     line-height: 140%;
 }
 .entry-title {line-height: 35px;}
 .entry-title a {
-    color: #000;
+    color: #444;
     text-decoration: none;
 }
 .entry-title a:hover {
     border-bottom: 1px solid #333;
+    color: #000;
 }
 
 .entry-meta {
-    color: #ee5f00;
+    color: #999;
+    font: 12px Verdana, Arial, sans-serif;
 }
 .entry-meta-single { color: #999; font-style: italic;; }
 .entry-meta-single a { color: #999;}
@@ -362,7 +403,7 @@ footer.entry-meta-single a { color: #eee;}
 #single-content {
     width: 535px;
     float: right;
-    margin-right: 90px;
+    margin-right: 10px;
     line-height: 25px;
 }
 #single-content img .special {
@@ -424,7 +465,7 @@ img.alignright {
 	margin: .5em;
 }
 .gallery-caption {
-	
+
 }
 .wp-smiley {
 	margin: 0;
@@ -482,7 +523,7 @@ textarea {
 
 #colophon {
     margin-top: 20px;
-	padding: 1em 0 0;
+	padding: 1em 0 1em;
 	font: 13px Helvetica, Arial, sans-serif;
 }
 

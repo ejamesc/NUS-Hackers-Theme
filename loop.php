@@ -40,7 +40,7 @@
 		<?php comments_template( '', true ); ?>
 
 	<?php endwhile; ?>
-	
+
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
 	<?php if (  $wp_query->max_num_pages > 1 && !is_home() ) : ?>
 		<nav id="nav-below">
@@ -50,39 +50,14 @@
 		</nav><!-- #nav-below -->
 	<?php endif; ?>
 	</div><!--posts-->
-	
-	
+
+
 <?php elseif ( is_home() ) : //If this is the home page ?>
-	
-	
-<div id="feature"><?php /* Top article loop */
-$my_query = new WP_Query('showposts=1');
-while ($my_query->have_posts()) : $my_query->the_post();
-?>
 
-<?php if (has_post_thumbnail() ): ?>
-	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'toolbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"> <?php the_post_thumbnail(); ?> </a>
-<?php endif; ?>
-
-<div class="entry-meta-featured"><?php printf( __('<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>'), get_the_date( 'c' ),
-	get_the_date()
-); ?></div>
-
-<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'toolbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
-<div id="columnize">
-<?php wpe_excerpt('wpe_excerptlength_index', 'wpe_excerptmore'); ?></div><!--columnize--> <?php edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
-<?php $do_not_duplicate = $post->ID;?>
-<?php endwhile; ?>
-</div><!--featured-->
-
-<div id="belowcontainer"><div id="leftbar"><strong>We work to spread the hacker culture.</strong> <a href="<?php echo home_url( '/' ); ?>about">Read more about us</a>, find out <a href="<?php echo home_url( '/' ); ?>why">why we do what we do</a>, or <a href="<?php echo home_url( '/' ); ?>code">use our code</a>.</div>
 
 <div id="posts">
-<?php while ( have_posts() ) : the_post(); /* Secondary article loop*/ ?>
-	
-	<?php if( $post->ID == $do_not_duplicate ) continue;
-	update_post_caches($posts); ?>
+<h1 class="front-h1">Articles<span>More at <a href="http://treehouse.nushackers.org">treehouse.nushackers.org &rarr;</a></span></h1>
+<?php while ( have_posts() ) : the_post(); /* Article loop*/ ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 			<div class="entry-meta"><?php printf( __('<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>'), get_the_date( 'c' ),
@@ -107,7 +82,15 @@ while ($my_query->have_posts()) : $my_query->the_post();
 <?php endwhile; ?>
 <a href="<?php echo home_url( '/' ); ?>articles">More Articles &rarr;</a>
 </div><!--posts-->
-</div><!--belowcontainer-->
+
+<div id="right">
+<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo get_bloginfo( 'url' ); ?>/sponsor">Sponsored</a> by X. <strong><em><a class="subtle" href="<?php echo get_bloginfo( 'url' ); ?>/fridayhacks">Every Friday @ 6pm UTown ERC SR 2</a></em></strong></span></h1>
+	<?php $page_id = 208;
+	$page = get_page($page_id);
+	$content = $page->post_content;
+	echo $content;
+	?>
+</div>
 
 <?php elseif ( is_page_template('articles.php') ) : //If this calls for an articles listing ?>
 	<?php
@@ -115,7 +98,7 @@ while ($my_query->have_posts()) : $my_query->the_post();
 		$wp_query = null;
 	    $wp_query = new WP_Query('posts_per_page=10&post_status=publish&paged=' . $paged);
 	?>
-	
+
 	<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); /* Secondary article loop*/ ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="entry-header">
@@ -136,7 +119,7 @@ while ($my_query->have_posts()) : $my_query->the_post();
 			</footer><!-- #entry-meta -->
 		</article><!-- #post-<?php the_ID(); ?> -->
 	<?php endwhile; ?>
-	
+
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
 	<?php if (  $wp_query->max_num_pages > 1 ): ?>
 		<nav id="nav-below">
