@@ -85,7 +85,7 @@
 
 <div id="right">
 <h1 class="front-h1">Friday Hacks<span><a href=" <?php echo get_bloginfo( 'url' ); ?>/sponsor">Sponsored</a> by X. <strong><em><a class="subtle" href="<?php echo get_bloginfo( 'url' ); ?>/fridayhacks">Every Friday @ 6pm UTown ERC SR 2</a></em></strong></span></h1>
-	<?php $page_id = 208; //ejames's local: 208
+	<?php $page_id = 1894; //ejames's local: 208
 	$page = get_page($page_id);
 	$content = $page->post_content;
 	echo $content;
