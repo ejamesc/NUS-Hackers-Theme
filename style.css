@@ -93,7 +93,7 @@ a:hover { text-decoration: underline;}
 	font-family: museo-sans, Georgia, Times;
 }
 
-#right div strong {color: #444;}
+#right div strong {color: #333;}
 
 #right time {
 	color: #999;
@@ -364,7 +364,7 @@ a.subtle:hover {color: #f8941d;}
 }
 .entry-title {line-height: 35px;}
 .entry-title a {
-    color: #444;
+    color: #333;
     text-decoration: none;
 }
 .entry-title a:hover {

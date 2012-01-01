@@ -56,7 +56,7 @@
 
 
 <div id="posts">
-<h1 class="front-h1">Articles<span>&hearts; &lambda; <br/>More community at <a href="http://treehouse.nushackers.org">treehouse.nushackers.org &rarr;</a></span></h1>
+<h1 class="front-h1">Articles<span><br/>More community at <a href="http://treehouse.nushackers.org">treehouse.nushackers.org &rarr;</a></span></h1>
 <?php while ( have_posts() ) : the_post(); /* Article loop*/ ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
@@ -85,7 +85,7 @@
 
 <div id="right">
 <h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Sponsored</a> by __________. <br/>Every Friday @ <a href="<?php echo home_url( '/' ); ?>fridayhacks">6pm UTown ERC Seminar Room 2</a></span></h1>
-	<?php $page_id = 1894; //ejames's local: 208 production: 1894
+	<?php $page_id = 208; //ejames's local: 208 production: 1894
 	$page = get_page($page_id);
 	$content = $page->post_content;
 	echo $content;
