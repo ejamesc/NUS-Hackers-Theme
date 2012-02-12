@@ -53,7 +53,7 @@
 
 
 <?php elseif ( is_home() ) : //If this is the home page ?>
-
+<a href="<?php echo home_url( '/hack-and-roll' ); ?>"><img style="border: 1px solid #aaa; margin-bottom: 10px;"src="<?php bloginfo( 'template_url' ); ?>/images/hrbanner.gif" /></a>
 
 <div id="posts">
 <h1 class="front-h1">Articles<span><br/>More community at <a href="http://treehouse.nushackers.org">treehouse.nushackers.org &rarr;</a></span></h1>
