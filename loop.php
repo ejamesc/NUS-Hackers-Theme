@@ -82,7 +82,7 @@
 </div><!--posts-->
 
 <div id="right">
-<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Supported</a> by Google, RIM, <a class="subtle" href="http://geeksphere.net">Geeksphere.net</a>. <br/>Every Friday @ <a href="<?php echo home_url( '/' ); ?>fridayhacks">6pm UTown ERC Seminar Room 2</a></span></h1>
+<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Supported</a> by IDA, Google, RIM, <a class="subtle" href="http://geeksphere.net">Geeksphere.net</a>. <br/>Every Friday @ <a href="<?php echo home_url( '/' ); ?>fridayhacks">6pm UTown ERC Seminar Room 2</a></span></h1>
 	<?php $page_id = 1894; //ejames's local: 208 production: 1894
 	$page = get_page($page_id);
 	$content = $page->post_content;
