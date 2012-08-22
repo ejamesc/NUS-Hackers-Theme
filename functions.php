@@ -65,7 +65,7 @@ function toolbox_widgets_init() {
 		'after_widget' => "</aside>",
 		'before_title' => '<h1 class="widget-title">',
 		'after_title' => '</h1>',
-	) );	
+	) );
 }
 add_action( 'init', 'toolbox_widgets_init' );
 
@@ -75,7 +75,7 @@ add_theme_support( 'post-thumbnails', array( 'post' ) ); // Add it for posts
 set_post_thumbnail_size( 942, 420, true ); // 942 pixels wide by 420 pixels tall, hard crop mode
 
 function wpe_excerptlength_teaser($length) {
-	return 55;
+	return 30;
 }
 function wpe_excerptlength_index($length) {
 	return 125;
@@ -89,11 +89,11 @@ function wpe_excerpt($length_callback='', $more_callback='') {
 	if (function_exists($length_callback)){
 		add_filter('excerpt_length', $length_callback);
 	}
-	
+
 	if (function_exists($more_callback)){
 		add_filter('excerpt_more', $more_callback);
 	}
-	
+
 	$output = get_the_excerpt();
 	$output = apply_filters('wptexturize', $output);
 	$output = apply_filters('convert_chars', $output);
@@ -105,7 +105,7 @@ function wpe_excerpt($length_callback='', $more_callback='') {
 function change_wp_search_size($query) {
 	if ( $query->is_search || $query->is_archive ) // Make sure it is a search or an archive page
 		$query->query_vars['posts_per_page'] = 10; // Change 10 to the number of posts you would like to show
- 
+
 	return $query; // Return our modified query variables
 }
 add_filter('pre_get_posts', 'change_wp_search_size'); // Hook our custom function onto the request filter
