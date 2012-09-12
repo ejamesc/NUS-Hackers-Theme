@@ -256,6 +256,10 @@ a:hover { text-decoration: underline;}
 article {
     margin-bottom: 30px;
 }
+article li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 #content nav {
 	display: block;
 	overflow: hidden;
