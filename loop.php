@@ -53,6 +53,7 @@
 
 
 <?php elseif ( is_home() ) : //If this is the home page ?>
+<a href="http://school.nushackers.org"><img style="margin-top: -15px;" src="<?php bloginfo( 'template_url' ); ?>/images/hackerschoolbanner.png" /></a>
 <div id="posts">
 <h1 class="front-h1">Articles<span><br/>More community at <a href="http://antinews.nushackers.org">antinews.nushackers.org &rarr;</a></span></h1>
 <?php while ( have_posts() ) : the_post(); /* Article loop*/ ?>
