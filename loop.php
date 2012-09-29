@@ -123,7 +123,7 @@ More community at <a href="http://antinews.nushackers.org">Antinews</a> &rarr;</
 		</article><!-- #post-<?php the_ID(); ?> -->
 	<?php endwhile; ?>
 
-	<?php /* Display navigation to next/previous pages when applicable */ ?>
+	<?php /* Display navigation to next/previous pages when applicable test */ ?>
 	<?php if (  $wp_query->max_num_pages > 1 ): ?>
 		<nav id="nav-below">
 			<h1 class="section-heading"><?php _e( 'Post navigation', 'toolbox' ); ?></h1>
