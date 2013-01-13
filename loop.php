@@ -54,7 +54,10 @@
 
 <?php elseif ( is_home() ) : //If this is the home page ?>
 <div id="posts">
-<h1 class="front-h1">Articles<span><br/>More community at <a href="http://antinews.nushackers.org">antinews.nushackers.org &rarr;</a></span></h1>
+<h1 class="front-h1">Articles<span>
+More community at <a href="http://antinews.nushackers.org">Antinews</a> &rarr;</br>
+<a href='http://school.nushackers.org'>hackerschool</a>: workshops for hackers &rarr;
+</span></h1>
 <?php while ( have_posts() ) : the_post(); /* Article loop*/ ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
@@ -82,7 +85,7 @@
 </div><!--posts-->
 
 <div id="right">
-<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Supported</a> by IDA. <br/>Every Friday @ <a href="<?php echo home_url( '/' ); ?>fridayhacks">6pm SR3 COM1, School of Computing</a></span></h1>
+<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Supported</a> by IDA. <br/>Every Friday @ <a href="<?php echo home_url( '/' ); ?>fridayhacks">7pm SR3 COM1, School of Computing</a></span></h1>
 	<?php $page_id = 1894; //ejames's local: 208 production: 1894
 	$page = get_page($page_id);
 	$content = $page->post_content;
