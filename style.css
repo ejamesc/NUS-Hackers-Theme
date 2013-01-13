@@ -66,7 +66,7 @@ a:hover { text-decoration: underline;}
 }
 #branding {
     width: 942px;
-    border-bottom: 1px dotted #333;
+    border-bottom: 1px dotted #eee;
     margin-bottom: 20px;
     font-family: Helvetica, Arial, sans-serif;
     margin-left: 10px;
@@ -377,8 +377,10 @@ a.subtle:hover {color: #f8941d;}
     text-decoration: none;
 }
 .entry-title a:hover {
-    border-bottom: 1px solid #333;
-    color: #000;
+    border-bottom: 1px solid #eee;
+    color: #eee;
+    /*border-bottom: 1px solid #333;
+    color: #000;*/
 }
 
 .entry-meta {
