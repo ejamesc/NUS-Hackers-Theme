@@ -14,7 +14,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* =General
 -------------------------------------------------------------- */
-body {font-family: Georgia, Serif;}
+body {font-family: Georgia, Serif; background: #111; color: #eee;}
 /* Initialize HTML5 elements */
 article, aside, details, figcaption, figure, footer, header, hgroup, img, menu, nav, section, svg {
     display: block
@@ -210,7 +210,8 @@ a:hover { text-decoration: underline;}
 	display: block;
 	line-height: 2em;
 	padding: 0.2em 1em;
-	color: #000;
+  color: #eee;
+	/*color: #000;*/
 	text-decoration: none;
 }
 #access ul ul {
@@ -345,7 +346,8 @@ a.subtle:hover {color: #f8941d;}
 
 .front-h1 {
 	font-size: 30px;
-	border-bottom: 3px solid #000;
+	border-bottom: 3px solid #eee;
+	/*border-bottom: 3px solid #000;*/
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 }
@@ -370,7 +372,8 @@ a.subtle:hover {color: #f8941d;}
 }
 .entry-title {line-height: 35px;}
 .entry-title a {
-    color: #333;
+    color: #eee;
+    /*color: #333;*/
     text-decoration: none;
 }
 .entry-title a:hover {
