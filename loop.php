@@ -86,7 +86,7 @@ More community at <a href="http://antinews.nushackers.org">Antinews</a> &rarr;</
 </div><!--posts-->
 
 <div id="right">
-<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Supported</a> by IDA. <br/>Every Friday @ <a href="<?php echo home_url( '/' ); ?>fridayhacks">SR2, Education Resource Centre, Utown</a></span></h1>
+<h1 class="front-h1">Friday Hacks<span><a href=" <?php echo home_url( '/' ); ?>sponsor">Supported</a> by IDA. <br/>Every Friday 6:30pm @ <a href="<?php echo home_url( '/' ); ?>fridayhacks">SR2, Education Resource Centre, Utown</a></span></h1>
 	<?php $page_id = 1894; //ejames's local: 208 production: 1894
 	$page = get_page($page_id);
 	$content = $page->post_content;
