@@ -55,7 +55,7 @@
 <?php elseif ( is_home() ) : //If this is the home page ?>
 <div id="posts">
 <h1 class="front-h1">Articles<span>
-More community at <a href="http://antinews.nushackers.org">Antinews</a> &rarr;</br>
+More community at <a href="http://antinews.nushackers.org">Antinews</a>; <a href='/hacknroll'>Hack&Roll 2013</a> &rarr; </br>
 <a href='http://school.nushackers.org'>hackerschool</a>: workshops for hackers &rarr;
 </span></h1>
 <?php while ( have_posts() ) : the_post(); /* Article loop*/ ?>
