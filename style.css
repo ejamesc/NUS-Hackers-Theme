@@ -14,7 +14,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* =General
 -------------------------------------------------------------- */
-body {font-family: Georgia, Serif; background: #111; color: #eee;}
+body {font-family: Georgia, Serif;}
 /* Initialize HTML5 elements */
 article, aside, details, figcaption, figure, footer, header, hgroup, img, menu, nav, section, svg {
     display: block
@@ -66,7 +66,7 @@ a:hover { text-decoration: underline;}
 }
 #branding {
     width: 942px;
-    border-bottom: 1px dotted #eee;
+    border-bottom: 1px dotted #333;
     margin-bottom: 20px;
     font-family: Helvetica, Arial, sans-serif;
     margin-left: 10px;
@@ -93,7 +93,7 @@ a:hover { text-decoration: underline;}
 	font-family: museo-sans, Georgia, Times;
 }
 
-#right div strong {color: #eee;}
+#right div strong {color: #333;}
 
 #right time {
 	color: #999;
@@ -210,8 +210,7 @@ a:hover { text-decoration: underline;}
 	display: block;
 	line-height: 2em;
 	padding: 0.2em 1em;
-  color: #eee;
-	/*color: #000;*/
+	color: #000;
 	text-decoration: none;
 }
 #access ul ul {
@@ -346,8 +345,7 @@ a.subtle:hover {color: #f8941d;}
 
 .front-h1 {
 	font-size: 30px;
-	border-bottom: 3px solid #eee;
-	/*border-bottom: 3px solid #000;*/
+	border-bottom: 3px solid #000;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 }
@@ -372,15 +370,12 @@ a.subtle:hover {color: #f8941d;}
 }
 .entry-title {line-height: 35px;}
 .entry-title a {
-    color: #eee;
-    /*color: #333;*/
+    color: #333;
     text-decoration: none;
 }
 .entry-title a:hover {
-    border-bottom: 1px solid #eee;
-    color: #eee;
-    /*border-bottom: 1px solid #333;
-    color: #000;*/
+    border-bottom: 1px solid #333;
+    color: #000;
 }
 
 .entry-meta {

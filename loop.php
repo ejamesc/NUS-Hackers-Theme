@@ -53,7 +53,6 @@
 
 
 <?php elseif ( is_home() ) : //If this is the home page ?>
-<a href="<?php echo home_url( '/2013/01/in-memoriam-aaron-swartz/' ); ?>"><img style="margin-bottom: 10px;"src="<?php bloginfo( 'template_url' ); ?>/images/aaronsw.png" /></a>
 <div id="posts">
 <h1 class="front-h1">Articles<span>
 More community at <a href="http://antinews.nushackers.org">Antinews</a> &rarr;</br>
