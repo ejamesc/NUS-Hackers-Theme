@@ -332,7 +332,11 @@ article li {
 }
 
 /* Headings */
+<<<<<<< HEAD
+h1, h2, h3, h4, h5 { 
+=======
 h1, h2, h3, h4, h5 {
+>>>>>>> c3f1fc0ec9f3c1e1da6ae7214ed2bf84937456bf
     font-family: Quattrocento, Times, serif;
     margin: 10px 0;
     }
